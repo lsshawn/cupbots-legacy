@@ -1,0 +1,22 @@
+{
+  "name": "bbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "api-ai-botkit": "^1.1.1",
+    "api-ai-botkit-facebook": "^1.5.1",
+    "botkit-middleware-apiai": "^0.1.1",
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^20.0.1",
+    "mongodb": "^2.2.29",
+    "monk": "^6.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
