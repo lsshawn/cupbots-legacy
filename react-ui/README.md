@@ -2043,7 +2043,7 @@ Note that in order to support routers that use HTML5 `pushState` API, you may wa
 ## Advanced Configuration
 
 You can adjust various development and production settings by setting environment variables in your shell or with [.env](#adding-development-environment-variables-in-env).
-
+  
 Variable | Development | Production | Usage
 :--- | :---: | :---: | :---
 BROWSER | :white_check_mark: | :x: | By default, Create React App will open the default system browser, favoring Chrome on macOS. Specify a [browser](https://github.com/sindresorhus/opn#app) to override this behavior, or set it to `none` to disable it completely. If you need to customize the way the browser is launched, you can specify a node script instead. Any arguments passed to `npm start` will also be passed to this script, and the url where your app is served will be the last argument. Your script's file name must have the `.js` extension.

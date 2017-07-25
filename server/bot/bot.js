@@ -1,6 +1,5 @@
 const Botkit = require('botkit')
 
-
 module.exports = (()=> {
 	
 // Create the Botkit controller, which controls all instances of the bot.
@@ -10,14 +9,11 @@ var controller = Botkit.facebookbot({
 	verify_token: process.env.VERIFY_TOKEN,
 });
 
-
-
 // set persistent menu options
 require('./components/thread_settings.js')(controller)
 
 // createConfig component
 controller.createConfig = require('./components/createConfig')
-
 // Register all the bots, their triggers, and their configuration
 var normalizedPath = require("path").join(__dirname, "skills");
 require("fs").readdirSync(normalizedPath).forEach(function(file) {

@@ -75,7 +75,7 @@ const getConfig = async (obj) => {
 	return data
 }
 
-
+// to get bot configs on the fly
 const handleWebhookPayload = async (req, res) => {
 
 

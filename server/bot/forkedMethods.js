@@ -1,4 +1,4 @@
-const api_root = 'http://localhost:3001'
+const api_root = 'http://localhost:' + process.envPORT || 3000;
 
 exports.handleWebhookPayload = (req, res, bot) => {
 

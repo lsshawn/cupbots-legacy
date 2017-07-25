@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 var Botkit = require('botkit');
 var debug = require('debug')('botkit:main');
 var resolve = require('path').resolve
+const path = require('path')
 
 const { handleWebhookPayload } = require('./bot/forkedMethods')
 
-// require('dotenv').config({path: resolve('./.env')})
-
+require('dotenv').config({path: path.resolve(__dirname, './.env')})
 
 mongoose.connect(process.env.DATABASE, {
 	useMongoClient: true
@@ -25,7 +25,7 @@ require('./models/Bot')
 const controller = require('./bot/bot')
 
 const app = require('./app')(controller)
-
+console.log(process.env.PORT)
 app.set('port', process.env.PORT || 3001)
 
 const server = app.listen(process.env.PORT || 3001, () => {

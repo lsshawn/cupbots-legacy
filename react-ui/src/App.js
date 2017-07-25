@@ -11,7 +11,8 @@ import BotConfig from './BotConfig'
 const requestPromise = require('request-promise')
 const rp = requestPromise.defaults({ json: true })
 
-const api_root = 'https://bot-react.herokuapp.com'
+//const api_root = 'https://bot-react.herokuapp.com'
+const api_root = 'http://sshawn.com/cupbots-api'
 
 class App extends Component {
 	constructor() {
@@ -106,7 +107,7 @@ state = {
     return (
       <div className="App">
 		<FacebookLogin
-			appId='344723999280057'
+			appId='792285047616015'
 			autoLoad={false}
 			fields="name,email"
 			scope="manage_pages,pages_messaging"
